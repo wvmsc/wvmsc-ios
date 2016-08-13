@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="maisonneuebold.ttf">
+            <string>MaisonNeue-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launch-bg.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="FVk-38-J8A">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white logo-cropped.png" translatesAutoresizingMaskIntoConstraints="NO" id="UIz-oK-Ydr">
+                                <rect key="frame" x="145" y="291" width="85" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UIz-oK-Ydr" secondAttribute="height" multiplier="1:1" id="0YL-HH-mx7"/>
+                                    <constraint firstAttribute="width" secondItem="UIz-oK-Ydr" secondAttribute="height" multiplier="123:58" id="K3Q-Oe-Tzp"/>
+                                    <constraint firstAttribute="height" constant="85" id="j2Q-Mn-ogw"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0YL-HH-mx7"/>
+                                        <exclude reference="K3Q-Oe-Tzp"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wave" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3i-kb-VQh">
+                                <rect key="frame" x="159" y="388" width="58" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="B1f-IQ-fz6"/>
+                                    <constraint firstAttribute="width" constant="60" id="eIE-D4-7G8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MaisonNeue-Bold" family="Maison Neue" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eIE-D4-7G8"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filter.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ao3-qp-DZa">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UIz-oK-Ydr" firstAttribute="width" secondItem="UIz-oK-Ydr" secondAttribute="height" multiplier="123:58" id="4Ns-Iz-g7Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ao3-qp-DZa" secondAttribute="trailing" constant="-20" id="4x1-OO-60D"/>
+                            <constraint firstItem="Ao3-qp-DZa" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="65k-sv-3Mh"/>
+                            <constraint firstItem="UIz-oK-Ydr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Guy-bM-ANc"/>
+                            <constraint firstItem="UIz-oK-Ydr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="OSg-qK-Rlw"/>
+                            <constraint firstItem="Ao3-qp-DZa" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="RNV-Vm-8hx"/>
+                            <constraint firstItem="UIz-oK-Ydr" firstAttribute="width" secondItem="UIz-oK-Ydr" secondAttribute="height" multiplier="1:1" id="SfH-Ha-oVc"/>
+                            <constraint firstItem="G3i-kb-VQh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="b5f-KZ-gh1"/>
+                            <constraint firstItem="UIz-oK-Ydr" firstAttribute="width" secondItem="UIz-oK-Ydr" secondAttribute="height" multiplier="123:58" id="btq-NZ-sng"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Ao3-qp-DZa" secondAttribute="bottom" id="gQU-2H-8K1"/>
+                            <constraint firstItem="G3i-kb-VQh" firstAttribute="top" secondItem="UIz-oK-Ydr" secondAttribute="bottom" constant="12" id="hmK-3W-KV4"/>
+                            <constraint firstItem="UIz-oK-Ydr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rVg-Aj-MYH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4Ns-Iz-g7Z"/>
+                                <exclude reference="Guy-bM-ANc"/>
+                                <exclude reference="btq-NZ-sng"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.5" y="342.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="filter.png" width="1125" height="2001"/>
+        <image name="launch-bg.JPG" width="2112" height="1408"/>
+        <image name="white logo-cropped.png" width="246" height="249"/>
+    </resources>
+</document>
